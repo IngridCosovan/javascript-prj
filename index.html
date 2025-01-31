@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiect Yardi</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/nav-bar.css">
+    <link rel="stylesheet" href="./assets/css/hero-section.css">
+  
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("components/nav-bar.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("navbar").innerHTML = html;
+      });
+  </script>
+<div id="hero-section"></div>
+<script>
+  fetch("components/hero-section.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("hero-section").innerHTML = html;
+    });
+</script>
+</body>
+</html>
