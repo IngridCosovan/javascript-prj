@@ -1,0 +1,49 @@
+.property-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 318px;
+    height: 408px;
+    padding: 24px 0;
+    border: 1px solid #ebebeb;
+    border-radius: 12px;
+}
+
+.icons-container {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    font-family: Outfit, sans-serif;
+    color: #5e5e5e;
+}
+
+.icons-container span,p {
+    font-family: Outfit, sans-serif;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.property-info{
+    padding: 20px 24px;
+}
+
+.icons-container h3, h4{
+    color: #222222;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+}

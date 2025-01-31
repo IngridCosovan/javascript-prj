@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/nav-bar.css">
     <link rel="stylesheet" href="./assets/css/hero-section.css">
-  
+  <link rel="stylesheet" href="./assets/css/new-listings.css">
+
 </head>
 <body>
   <div id="navbar"></div>
@@ -26,5 +27,14 @@
       document.getElementById("hero-section").innerHTML = html;
     });
 </script>
+  <div id="new-listings"></div>
+  <script>
+    fetch("components/new-listings.html")
+            .then(response => response.text())
+            .then(html => {
+              document.getElementById("new-listings").innerHTML = html;
+            });
+  </script>
+
 </body>
 </html>
