@@ -1,7 +1,23 @@
 .container {
-    width: 90%;
-    max-width: 1200px;
+    max-width: 1920px;
+    width: 100%;
+    padding-left: 288px;
+    padding-right: 288px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: 288px;
+        padding-right: 288px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 h1 {
@@ -12,7 +28,7 @@ h1 {
 }
 
 #new-listings {
-    padding: 40px 288px;
+    padding: 40px 0px;
 }
 
 p, h3, h4, h1 {

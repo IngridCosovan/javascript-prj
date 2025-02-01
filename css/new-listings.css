@@ -1,20 +1,55 @@
 #properties-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    #properties-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #properties-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #properties-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .property-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 318px;
-    height: 408px;
+    width: calc(25% - 16px);
+    box-sizing: border-box;
     border: 1px solid #ebebeb;
     border-radius: 12px;
 }
 
+@media (max-width: 1200px) {
+    .property-card {
+        width: calc(33.33% - 16px);
+    }
+}
+
+@media (max-width: 768px) {
+    .property-card {
+        width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .property-card {
+        width: 100%;
+    }
+}
+
 .property-card img {
+    width: 100%;
     border-radius: 12px 12px 0px 0px;
 }
 
@@ -31,6 +66,7 @@
     color: #5e5e5e;
     font-size: 14px;
     font-weight: 400;
+    line-height: 20px;
 }
 
 .property-info{
@@ -44,11 +80,13 @@
 .property-card h4{
     font-size: 20px;
     font-weight: 600;
+    line-height: 28px;
 }
 
 .property-card h3{
     font-size: 24px;
     font-weight: 500;
+    line-height: 32px;
 }
 
 .icon {
@@ -56,3 +94,15 @@
     height: 20px;
     display: flex;
 }
+
+/*#view-listings-btn {*/
+/*    display: inline-flex;*/
+/*    align-items: center;*/
+/*    background-color: #f0f0f0;*/
+/*    border: 1px solid #ccc;*/
+/*    padding: 10px 20px;*/
+/*    cursor: pointer;*/
+/*    font-size: 16px;*/
+/*    margin-top: 20px;*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
