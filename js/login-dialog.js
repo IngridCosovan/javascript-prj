@@ -1,4 +1,3 @@
-// signin-dialog.js
 function openDialog() {
     document.getElementById("login-dialog").style.display = "flex";
 }
