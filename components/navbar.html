@@ -1,13 +1,31 @@
 <div class="navbar-container">
-  <img class="logo" src="/assets/img/logo.svg" />
-  <div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#buy">Buy</a></li>
-        <li><a href="#sell">Sell</a></li>
-        <li><a href="#rent">Rent</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="login-button-container"><button class="login-button">Login</button></div>
+    <img class="logo" src="/assets/img/logo.svg"/>
+    <div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#buy">Buy</a></li>
+                <li><a href="#sell">Sell</a></li>
+                <li><a href="#rent">Rent</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="login-button-container">
+        <button class="login-button" onclick="openDialog()">Login</button>
+    </div>
+</div>
+
+<div id="overlay" class="overlay"></div>
+
+<div id="login-dialog" class="login-dialog">
+    <div class="close-btn-container"><span class="close-btn" onclick="closeDialog()">&times;</span></div>
+    <div class="dialog-content">
+        <h2>Sign In</h2>
+            <div class="input-container">
+                <input type="text" id="username" placeholder="Email" required><br><br>
+                <input type="password" id="password" placeholder="Password" required><br><br>
+                <button type="submit">Continue</button>
+            </div>
+            <div class="sign-up-msg"><span>Don't have an account? <strong>Sign up now</strong></span></div>
+            <span>By submitting, I accept the Arrow spaces terms of use</span>
+    </div>
 </div>

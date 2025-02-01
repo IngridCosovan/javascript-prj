@@ -23,7 +23,13 @@
 h1 {
     font-size: 36px;
     font-weight: 600;
+    color: #000;
+}
 
+h2{
+   font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
     color: #000;
 }
 
@@ -31,6 +37,6 @@ h1 {
     padding: 40px 0px;
 }
 
-p, h3, h4, h1 {
+p, h3, h4, h1, h2, span {
     font-family: 'Outfit', sans-serif;
 }
