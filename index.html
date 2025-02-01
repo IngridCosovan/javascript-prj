@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proiect Yardi</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/nav-bar.css">
-    <link rel="stylesheet" href="./assets/css/hero-section.css">
-  <link rel="stylesheet" href="./assets/css/new-listings.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect Yardi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/hero-section.css">
+    <link rel="stylesheet" href="css/new-listings.css">
 
 </head>
 <body>
-  <div id="navbar"></div>
-  <script>
-    fetch("components/nav-bar.html")
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById("navbar").innerHTML = html;
-      });
-  </script>
+<div id="navbar"></div>
+<script src="js/navbar.js"></script>
 <div id="hero-section"></div>
+<script src="js/hero-section.js"></script>
+<div id="new-listings"></div>
 <script>
-  fetch("components/hero-section.html")
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById("hero-section").innerHTML = html;
-    });
-</script>
-  <div id="new-listings"></div>
-  <script>
     fetch("components/new-listings.html")
-            .then(response => response.text())
-            .then(html => {
-              document.getElementById("new-listings").innerHTML = html;
-            });
-  </script>
-
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("new-listings").innerHTML = html;
+            initNewListings();
+        });
+</script>
+<script src="js/new-listings.js"></script>
 </body>
 </html>
