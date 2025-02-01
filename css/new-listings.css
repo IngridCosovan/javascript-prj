@@ -61,29 +61,30 @@
     color: #5e5e5e;
 }
 
-.icons-container span,p {
+.icons-container span, p {
     font-family: Outfit, sans-serif;
     color: #5e5e5e;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    white-space: nowrap;
 }
 
-.property-info{
+.property-info {
     padding: 20px 24px;
 }
 
-.icons-container h3, h4{
+.icons-container h3, h4 {
     color: #222222;
 }
 
-.property-card h4{
+.property-card h4 {
     font-size: 20px;
     font-weight: 600;
     line-height: 28px;
 }
 
-.property-card h3{
+.property-card h3 {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
@@ -95,14 +96,32 @@
     display: flex;
 }
 
-/*#view-listings-btn {*/
-/*    display: inline-flex;*/
-/*    align-items: center;*/
-/*    background-color: #f0f0f0;*/
-/*    border: 1px solid #ccc;*/
-/*    padding: 10px 20px;*/
-/*    cursor: pointer;*/
-/*    font-size: 16px;*/
-/*    margin-top: 20px;*/
-/*    transition: background-color 0.3s ease;*/
-/*}*/
+#view-listings-btn {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    color: #222222;
+
+}
+
+.button-container{
+    margin-top: 24px;
+
+    padding: 16px 16px 16px 24px;
+    width: 105px;
+    height: 24px;
+}
+
+#arrow img {
+    width: 20px;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin-left: 8px;
+}
+
+.arrow-up {
+    transform: rotate(180deg);
+}

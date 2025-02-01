@@ -17,14 +17,20 @@
 <div id="hero-section"></div>
 <script src="js/hero-section.js"></script>
 <div id="new-listings"></div>
-<script>
-    fetch("components/new-listings.html")
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById("new-listings").innerHTML = html;
-            initNewListings();
-        });
-</script>
+    <script>
+        fetch("components/new-listings.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("new-listings").innerHTML = html;
+                const viewListingsBtn = document.getElementById("view-listings-btn");
+                if (viewListingsBtn) {
+                    viewListingsBtn.addEventListener("click", toggleListings);
+                } else {
+                    console.error("Btn 'view-listings-btn' was not found!");
+                }
+                initNewListings();
+            });
+    </script>
 <script src="js/new-listings.js"></script>
 </div>
 </body>
