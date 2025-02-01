@@ -1,7 +1,12 @@
+.logo-container {
+    display: flex;
+    gap: 8px;
+}
 
-.logo {
-    width: 198.095px;
-    height: 40px;
+@media screen and (max-width: 767px) {
+    .arrow-spaces {
+        display: none;
+    }
 }
 
 .navbar-container {
@@ -64,7 +69,6 @@
     z-index: 999;
     pointer-events: none;
 }
-
 
 .login-dialog {
     display: none;
@@ -175,22 +179,3 @@ button[type="submit"] {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        display: block; /* Meniul trece pe linia următoare */
-        text-align: center; /* Aliniere centrala pentru itemele din meniu */
-    }
-
-    .navbar ul {
-        display: block; /* Trece lista la o coloană */
-    }
-
-    .navbar ul li {
-        margin-right: 0;
-        margin-bottom: 10px; /* Distanțiere între elementele meniului */
-    }
-
-    .login-button-container {
-        margin-top: 20px; /* Adăugăm un spațiu de sus pentru butonul de login pe mobil */
-    }
-}
