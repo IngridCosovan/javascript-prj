@@ -1,13 +1,42 @@
+@media screen and (max-width: 767px) {
+    .arrow-spaces {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 2rem;
+    }
+
+    .dialog-content h2{
+        font-size: 20px !important;
+    }
+
+    input[id="username"], input[type="password"] {
+        width: 90% !important;
+
+    }
+}
+
+@media (max-width: 1366px) {
+
+    .dialog-content {
+        padding: 15px;
+    }
+
+    input[id="username"], input[type="password"] {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 16px;
+    }
+}
+
 .logo-container {
     display: flex;
     gap: 8px;
 }
 
-@media screen and (max-width: 767px) {
-    .arrow-spaces {
-        display: none;
-    }
-}
 
 .navbar-container {
     display: flex;
@@ -76,8 +105,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1384px;
-    height: 878px;
+    width: 70%;
+    height:40rem;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     justify-content: center;
@@ -132,24 +161,7 @@ button[type="submit"] {
     border: none;
 }
 
-@media (max-width: 1366px) {
-    .login-dialog {
-        width: 90%;
-        height: auto;
-    }
 
-    .dialog-content {
-        padding: 15px;
-    }
-
-    input[id="username"], input[type="password"] {
-        padding: 8px;
-    }
-
-    button[type="submit"] {
-        padding: 8px 16px;
-    }
-}
 
 .dialog-content h2 {
     font-family: 'Outfit', sans-serif;
@@ -173,6 +185,7 @@ button[type="submit"] {
 
 .terms-text {
     margin-top: 32px;
+    color: #222222;
 }
 
 .underline {

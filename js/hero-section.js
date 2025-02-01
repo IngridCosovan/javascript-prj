@@ -5,3 +5,4 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('hero-section').innerHTML = html;
         });
 });
+
