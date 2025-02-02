@@ -46,4 +46,19 @@ function toggleListings() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    fetch("components/new-listings.html")
+    .then(response => response.text())
+    .then(html => {
+    document.getElementById("new-listings").innerHTML = html;
+    const viewListingsBtn = document.getElementById("view-listings-btn");
+    if (viewListingsBtn) {
+    viewListingsBtn.addEventListener("click", toggleListings);
+} else {
+    console.error("Btn 'view-listings-btn' was not found!");
+}
+    initNewListings();
+});
+})
+
 

@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 });
 
-// signin-dialog.js
 function openDialog() {
     document.getElementById("login-dialog").style.display = "flex";
     document.getElementById("overlay").style.display = "block";
